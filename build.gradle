@@ -1,0 +1,74 @@
+plugins {
+    id 'java-library'
+    id ('io.qameta.allure') version '2.11.2'
+}
+group 'quru.qa'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    compileJava {
+        options.encoding = 'UTF-8'
+    }
+    compileTestJava {
+        options.encoding = 'UTF-8'
+    }
+}
+
+
+
+dependencies {
+    testImplementation (
+            'org.junit.jupiter:junit-jupiter:5.9.2',
+            'com.codeborne:selenide:6.12.3',
+            'com.codeborne:pdf-test:1.5.0',
+            'com.codeborne:xls-test:1.4.3',
+            'com.fasterxml.jackson.core:jackson-core:2.13.1',
+            'com.google.code.gson:gson:2.10.1',
+            "io.qameta.allure:allure-junit5:2.18.1",
+            "org.junit.jupiter:junit-jupiter-api:5.6.2",
+            "io.rest-assured:rest-assured:5.1.0",
+            "org.slf4j:slf4j-simple:2.0.6",
+            'com.opencsv:opencsv:5.7.1',
+            'com.fasterxml.jackson.core:jackson-core:2.14.2',
+            'com.fasterxml.jackson.core:jackson-databind:2.14.2',
+            'io.qameta.allure:allure-selenide:2.21.0',
+            'io.github.bonigarcia:webdrivermanager:5.2.1',
+            'org.aeonbits.owner:owner:1.0.4',
+            'org.assertj:assertj-core:3.23.1',
+
+
+    )
+}
+
+allure {
+    report {
+        version.set("2.19.0")
+    }
+    adapter { // отвечает за появление папочки build/allure-results
+        aspectjWeaver.set(true) //обработка аннотации @Step
+        frameworks {
+            junit5 { //название фреймворка
+                adapterVersion.set("2.19.0") //версия интеграции фреймворка и Allure
+            }
+        }
+    }
+}
+dependencies {
+    implementation 'com.github.javafaker:javafaker:1.0.2'
+    testImplementation 'org.testng:testng:7.1.0'
+    implementation 'com.codeborne:selenide:6.12.3'
+    testImplementation 'org.projectlombok:lombok:1.18.22'
+}
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(Test) {//благодаря этой строчке передаются параметры в скрипт сборки
+    systemProperties(System.getProperties())
+    useJUnitPlatform()
+}
+test {
+    useJUnitPlatform()
+}
+
