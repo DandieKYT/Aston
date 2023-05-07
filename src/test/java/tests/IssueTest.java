@@ -27,12 +27,9 @@ public class IssueTest {
     @DisplayName("Проверка страницы Issue")
     public void issueTest() {
         gitHubSteps.open();
-        gitHubSteps.authorization();
-        gitHubSteps.getOpenRepository();
-        gitHubSteps.getOpenIssue();
-        gitHubSteps.issueText();
-        gitHubSteps.dropMenu();
-        gitHubSteps.signOut();
+        gitHubSteps.search("css");
+        gitHubSteps.issueCssText();
+        gitHubSteps.expectedIssueResult();
 
     }
 
@@ -42,19 +39,14 @@ public class IssueTest {
         step("Открываем главную страницу", () -> {
             gitHubSteps.open();
         });
-        step("Авторизация на GitHub", () -> {
-            gitHubSteps.authorization();
+        step("В поле поиска пишем css", () -> {
+            gitHubSteps.search("css");
         });
         step("Открываем раздел Issue", () -> {
-            gitHubSteps.getOpenRepository();
-            gitHubSteps.getOpenIssue();
+            gitHubSteps.issueCssText();
         });
         step("Проверяем текст на соответсвие странице", () -> {
-            gitHubSteps.issueText();
-        });
-        step("Выход со страницы", () -> {
-            gitHubSteps.dropMenu();
-            gitHubSteps.signOut();
+            gitHubSteps.expectedIssueResult();
         });
     }
 
@@ -63,18 +55,9 @@ public class IssueTest {
     public void testIssueListener() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         open("https://github.com");
-
-        $(byTagAndText("a", "Sign in")).click();
-        $("#login_field").setValue("DandieKYT");
-        $("#password").setValue("Kydrya719").pressEnter();
-
-        $x("//aside[@aria-label='Account']//li[1]//div[1]//div[1]//a[1]").click();
-        $x("//a[@id='issues-tab']").click();
-
-        $(".mb-1.h4").shouldBe(text("Label issues and pull requests for new contributors"));
-
-        $x("//summary[@aria-label='View profile and more']//span[@class='dropdown-caret']").click();
-        $("button[role='menuitem'][type='submit']").click();
+        $("[aria-label=\"Search GitHub\"]").setValue("css").pressEnter();
+        $x("(//a[@class='menu-item'])[3]").click();
+        $(withTagAndText("h3","issues")).shouldBe(text("issues"));
 
     }
 }
