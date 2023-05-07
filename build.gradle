@@ -1,9 +1,24 @@
 plugins {
     id 'java-library'
+    id 'java'
     id ('io.qameta.allure') version '2.11.2'
 }
 group 'quru.qa'
 version '1.0-SNAPSHOT'
+
+allure {
+    report {
+        version.set("2.19.0")
+    }
+    adapter { // отвечает за появление папочки build/allure-results
+        aspectjWeaver.set(true) //обработка аннотации @Step
+        frameworks {
+            junit5 { //название фреймворка
+                adapterVersion.set("2.19.0") //версия интеграции фреймворка и Allure
+            }
+        }
+    }
+}
 
 repositories {
     mavenCentral()
@@ -32,7 +47,7 @@ dependencies {
             'com.opencsv:opencsv:5.7.1',
             'com.fasterxml.jackson.core:jackson-core:2.14.2',
             'com.fasterxml.jackson.core:jackson-databind:2.14.2',
-            'io.qameta.allure:allure-selenide:2.21.0',
+            'io.qameta.allure:allure-selenide:2.19.0',
             'io.github.bonigarcia:webdrivermanager:5.2.1',
             'org.aeonbits.owner:owner:1.0.4',
             'org.assertj:assertj-core:3.23.1',
@@ -41,19 +56,7 @@ dependencies {
     )
 }
 
-allure {
-    report {
-        version.set("2.19.0")
-    }
-    adapter { // отвечает за появление папочки build/allure-results
-        aspectjWeaver.set(true) //обработка аннотации @Step
-        frameworks {
-            junit5 { //название фреймворка
-                adapterVersion.set("2.19.0") //версия интеграции фреймворка и Allure
-            }
-        }
-    }
-}
+
 dependencies {
     implementation 'com.github.javafaker:javafaker:1.0.2'
     testImplementation 'org.testng:testng:7.1.0'
