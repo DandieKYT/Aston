@@ -1,22 +1,42 @@
 package tests;
 
 import com.codeborne.selenide.Condition;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static com.codeborne.selenide.Selectors.byTagAndText;
 import static com.codeborne.selenide.Selectors.withTagAndText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class AstonTests extends TestBase{
+public class AstonTests extends TestBase {
     @Test
-    public void careerAston(){
+    public void careerAston() {
         open("/");
-        $x("//li[@tabindex='Карьера']").hover().click();
-        $(withTagAndText("a","Карьера")).click();
+        $(withTagAndText("div", "Карьера")).hover().click();
+        $(withTagAndText("a", "Карьера")).click();
         $x("//button[contains(text(),'Подтверждаю')]").click();
         $x("//a[contains(text(),'Вакансии')]").click();
+        switchTo().window(1);
         $(".tmpl_hh_tab--about .tmpl_hh_header__vacancy-button").click();
         $x("//span[text()='Тестировщик']").shouldBe(Condition.visible);
-        sleep(5000);
+    }
+
+    @CsvSource(value = {
+            "Отрасли,         ФинТех",
+            "Услуги,             Saas",
+    })
+    @Owner("Kudryavtsev")
+    @Feature("Материалы и Карьера")
+    @Story("Открытие страниц Материалы и Карьера")
+    @ParameterizedTest
+    public void servicesAndIndustries(String param, String expectedText) {
+        open("/");
+        $x(String.format("//div[text()='%s']", param)).click();
+        sleep(2000);
+
     }
 }
