@@ -7,6 +7,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -20,7 +21,7 @@ import static com.codeborne.selenide.Selectors.byTagAndText;
 import static com.codeborne.selenide.Selectors.withTagAndText;
 import static com.codeborne.selenide.Selenide.*;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-
+@Tag("remote_test")
 public class AstonTests extends TestBase {
     @Test
     public void careerAston() {
