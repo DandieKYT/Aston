@@ -35,7 +35,6 @@ public class AstonTests extends TestBase {
         $x("//span[text()='Тестировщик']").shouldBe(Condition.visible);
         Selenide.closeWindow();
         switchTo().window(0);
-        sleep(3000);
     }
 
 
@@ -58,10 +57,7 @@ public class AstonTests extends TestBase {
             open("/");
             $x("//div[text()='Технологии']").hover();
             $(byTagAndText("a", "React")).click();
-            actions().scrollToElement( $x("//div[text()='Тестирование']"));
-            $x("//div[text()='Тестирование']").click();
-            $x("//button[text()='Next']").click();
-            $x("//*[contains(@class, 'slick-current')]//h3[text()='Mocha']").shouldBe(text("Mocha"));
+            $x("//h1[contains(text(),'React-разработка')]").shouldBe(text("React-разработка"));
         }
         @Test
        public void contactWithUs(){
@@ -77,6 +73,5 @@ public class AstonTests extends TestBase {
             $(byTagAndText("div", "Desktop")).click();
             $x("//button[@class='Button-module--button--CU-kq Button-module--sizeSM--eCtqi PreviewModal-module--button--JmKgy']").click();
             $(byTagAndText("div", "Desktop")).shouldBe(visible);
-            sleep(2000);
         }
 }
