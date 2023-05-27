@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import steps.AstonSteps;
 
 import javax.swing.*;
 import java.io.File;
@@ -23,18 +24,16 @@ import static com.codeborne.selenide.Selenide.*;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @Tag("remote_test")
 public class AstonTests extends TestBase {
+    AstonSteps astonSteps = new AstonSteps();
     @Test
     public void careerAston() {
-        open("/");
-        $(withTagAndText("div", "Карьера")).hover().click();
-        $(withTagAndText("a", "Карьера")).click();
-        $x("//button[contains(text(),'Подтверждаю')]").click();
-        $x("//a[contains(text(),'Вакансии')]").click();
-        switchTo().window(1);
-        $(".tmpl_hh_tab--about .tmpl_hh_header__vacancy-button").click();
-        $x("//span[text()='Тестировщик']").shouldBe(Condition.visible);
-        Selenide.closeWindow();
-        switchTo().window(0);
+        astonSteps.openPage();
+        astonSteps.careerAston();
+        astonSteps.secondCareerAston();
+        astonSteps.closeCookie();
+        astonSteps.vacations();
+        astonSteps.buttonVacations();
+        astonSteps.checkVacationQA();
     }
 
 
@@ -47,28 +46,28 @@ public class AstonTests extends TestBase {
     @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
     @ParameterizedTest
     public void servicesAndIndustries(String param, String expectedText) {
-        open("/");
+        astonSteps.openPage();
         $x(String.format("//div[text()='%s']", param)).hover();
         $(byTagAndText("a", (expectedText))).click();
         $(".TitleWith-module--title--bojgT").shouldBe(text(expectedText));
     }
         @Test
         public void reactJs(){
-            open("/");
+            astonSteps.openPage();
             $x("//div[text()='Технологии']").hover();
             $(byTagAndText("a", "React")).click();
             $x("//h1[contains(text(),'React-разработка')]").shouldBe(text("React-разработка"));
         }
         @Test
        public void contactWithUs(){
-            open("/");
+            astonSteps.openPage();
             $x("//jdiv[@class='hoverl_e34b']").click();
             $x(" //textarea[@placeholder='Введите сообщение']").setValue("autotest").pressEnter();
             $(".text_dd60").shouldBe(text("Укажите ваши контакты, чтобы мы смогли ответить вам"));
         }
         @Test
         public void projectPrice(){
-            open("/");
+            astonSteps.openPage();
             $x("//a[text()='Узнать стоимость']").click();
             $(byTagAndText("div", "Desktop")).click();
             $x("//button[@class='Button-module--button--CU-kq Button-module--sizeSM--eCtqi PreviewModal-module--button--JmKgy']").click();
