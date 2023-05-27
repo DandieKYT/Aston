@@ -37,6 +37,7 @@ public class AstonTests extends TestBase {
         astonSteps.vacations();
         astonSteps.buttonVacations();
         astonSteps.checkVacationQA();
+
     }
 
 
