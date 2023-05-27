@@ -1,0 +1,1 @@
+[2023-05-27T20:36:15.291Z] [WARNING] network 0 WebSocket connection to 'wss://vi-sber1-1.jivo.ru/M1Vi4BikDX?a9c5e1155e0f6d23' failed: WebSocket is closed before the connection is established.
