@@ -1,0 +1,17 @@
+{
+  "base": {
+    "logo": "",
+    "project": "bizone",
+    "environment": "Chrome",
+    "comment": "build-project",
+    "reportLink": "",
+    "language": "ru",
+    "allureFolder": "allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "6063719366:AAGyTOc43Q5PV6wFCFz_0wSu8y05ODswZCU",
+    "chat": "-1001842569257",
+    "replyTo": ""
+  }
+}
