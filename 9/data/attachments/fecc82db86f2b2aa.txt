@@ -1,0 +1,2 @@
+[2023-05-27T20:42:40.419Z] [SEVERE] chrome-extension://invalid/ - Failed to load resource: net::ERR_FAILED
+[2023-05-27T20:42:41.102Z] [WARNING] https://hh.ru/employer/6093775?hhtmFrom=vacancy - [.WebGL-0x6c602424e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
