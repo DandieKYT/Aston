@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat May 27 17:28:07 GMT 2023","Sat May 27 17:28:13 GMT 2023","6004","","tests.AstonTests","","tests.AstonTests","servicesAndIndustries","servicesAndIndustries(String, String) [2] Услуги, Разработка мобильных приложений",""
+"passed","Sat May 27 17:27:45 GMT 2023","Sat May 27 17:27:50 GMT 2023","5379","","tests.AstonTests","","tests.AstonTests","contactWithUs","contactWithUs()",""
+"passed","Sat May 27 17:28:01 GMT 2023","Sat May 27 17:28:07 GMT 2023","5928","","tests.AstonTests","","tests.AstonTests","servicesAndIndustries","servicesAndIndustries(String, String) [1] Отрасли, eCommerce",""
+"failed","Sat May 27 17:27:50 GMT 2023","Sat May 27 17:27:58 GMT 2023","8251","","tests.AstonTests","","tests.AstonTests","projectPrice","projectPrice()",""
+"failed","Sat May 27 17:27:33 GMT 2023","Sat May 27 17:27:45 GMT 2023","12069","","tests.AstonTests","","tests.AstonTests","careerAston","careerAston()",""
+"passed","Sat May 27 17:27:58 GMT 2023","Sat May 27 17:28:01 GMT 2023","2457","","tests.AstonTests","","tests.AstonTests","reactJs","reactJs()",""
