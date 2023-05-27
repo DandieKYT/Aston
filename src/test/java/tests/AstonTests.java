@@ -4,10 +4,13 @@ import com.codeborne.selenide.Condition;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byTagAndText;
 import static com.codeborne.selenide.Selectors.withTagAndText;
 import static com.codeborne.selenide.Selenide.*;
@@ -25,9 +28,10 @@ public class AstonTests extends TestBase {
         $x("//span[text()='Тестировщик']").shouldBe(Condition.visible);
     }
 
+
     @CsvSource(value = {
-            "Отрасли,         ФинТех",
-            "Услуги,             Saas",
+            "Отрасли,         eCommerce",
+            "Услуги,             Разработка мобильных приложений",
     })
     @Owner("Kudryavtsev")
     @Feature("Материалы и Карьера")
@@ -35,8 +39,8 @@ public class AstonTests extends TestBase {
     @ParameterizedTest
     public void servicesAndIndustries(String param, String expectedText) {
         open("/");
-        $x(String.format("//div[text()='%s']", param)).click();
-        sleep(2000);
-
+        $x(String.format("//div[text()='%s']", param)).hover();
+        $(byTagAndText("a", (expectedText))).click();
+        $(".TitleWith-module--title--bojgT").shouldBe(text(expectedText));
     }
 }
