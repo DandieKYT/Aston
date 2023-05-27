@@ -25,6 +25,9 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @Tag("remote_test")
 public class AstonTests extends TestBase {
     AstonSteps astonSteps = new AstonSteps();
+    @Owner("Kudryavtsev")
+    @Feature("Отрасли и Услуги")
+    @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
     @Test
     public void careerAston() {
         astonSteps.openPage();
@@ -51,22 +54,31 @@ public class AstonTests extends TestBase {
         astonSteps.openTitle(expectedText);
         astonSteps.checkTitle(expectedText);
     }
-        @Test
-        public void reactJs(){
+    @Owner("Kudryavtsev")
+    @Feature("Отрасли и Услуги")
+    @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
+    @Test
+    public void reactJs(){
         astonSteps.openPage();
         astonSteps.openTechnologies();
         astonSteps.openReact();
         astonSteps.checkReact();
     }
-        @Test
-       public void contactWithUs(){
+    @Owner("Kudryavtsev")
+    @Feature("Отрасли и Услуги")
+    @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
+    @Test
+    public void contactWithUs(){
         astonSteps.openPage();
         astonSteps.chatWindow();
         astonSteps.setValueChat();
         astonSteps.checkChatResponse();
     }
-        @Test
-        public void projectPrice(){
+    @Owner("Kudryavtsev")
+    @Feature("Отрасли и Услуги")
+    @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
+    @Test
+    public void projectPrice(){
         astonSteps.openPage();
         astonSteps.buttonPrice();
         astonSteps.checkBoxDesktop();
