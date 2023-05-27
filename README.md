@@ -61,7 +61,7 @@
  </br>
  
  <a name="Project"><h2>Проект</h2></a>
-<a href="https://astondevs.ru/"><code><img width="5%" title="Aston" src="/design/icons/Selenide.png"></code></a> Проект по автоматизации тестирования для <a target="_blank" href="https://bi.zone/">BI.ZONE</a> — компания по управлению цифровыми рисками.
+<a href="https://astondevs.ru/"><code><img width="5%" title="Aston" src="/design/icons/aston.svg"></code></a> Проект по автоматизации тестирования для <a target="_blank" href="https://bi.zone/">BI.ZONE</a> — компания по управлению цифровыми рисками.
  :star2:
  
  <a name="Build_in_Jenkins" href="https://jenkins.autotests.cloud/job/BIZONE/"><h2>👷‍♂️ Сборки в [Jenkins](https://jenkins.autotests.cloud/job/BIZONE/)<h2></a>
