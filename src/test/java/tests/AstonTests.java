@@ -25,7 +25,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @Tag("remote_test")
 public class AstonTests extends TestBase {
     AstonSteps astonSteps = new AstonSteps();
-    @Owner("Kudryavtsev")
+    @Owner("Кудрявцев")
     @Feature("Карьера в Aston")
     @Story("Открытие страницы на HH и проверка наличия вакансии Тестировщик")
     @Test
@@ -44,7 +44,7 @@ public class AstonTests extends TestBase {
             "Отрасли,         eCommerce",
             "Услуги,             Разработка мобильных приложений",
     })
-    @Owner("Kudryavtsev")
+    @Owner("Кудрявцев")
     @Feature("Отрасли и Услуги")
     @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
     @ParameterizedTest
@@ -54,7 +54,7 @@ public class AstonTests extends TestBase {
         astonSteps.openTitle(expectedText);
         astonSteps.checkTitle(expectedText);
     }
-    @Owner("Kudryavtsev")
+    @Owner("Кудрявцев")
     @Feature("Технология React")
     @Story("Открытие страницы React и проверка ее содержимого")
     @Test
@@ -64,7 +64,7 @@ public class AstonTests extends TestBase {
         astonSteps.openReact();
         astonSteps.checkReact();
     }
-    @Owner("Kudryavtsev")
+    @Owner("Кудрявцев")
     @Feature("Чат")
     @Story("Проверка ответа бота на запрос")
     @Test
@@ -74,7 +74,7 @@ public class AstonTests extends TestBase {
         astonSteps.setValueChat();
         astonSteps.checkChatResponse();
     }
-    @Owner("Kudryavtsev")
+    @Owner("Кудрявцев")
     @Feature("Открытие страницы Узнать стоимость")
     @Story("Открытие страницы с конфигурацией для проекта и проверка ее соответствия")
     @Test
