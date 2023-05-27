@@ -44,18 +44,20 @@
  
  <a name="ImplementedСhecks"><h2>:heavy_check_mark:  Реализованные проверки:</h2></a>
  
- :clipboard: Наличие вакансии тестировщика на <a href = "https://spb.hh.ru/employer/2367681?roistat_visit=633908">HH </br>
+ :clipboard: Наличие вакансии тестировщика на <a href = "https://spb.hh.ru/employer/6093775?hhtmFrom=vacancy">HH </br>
  
- :speech_balloon: Переход на официальную страницу компании в <a href = "https://vk.com/bi_zone_vk?roistat_visit=633908">ВК
+ :speech_balloon: Открытие страницы  <a href = "https://astondevs.ru/pricing">Узнать стоимость
   </br>
  
- :clipboard: Открытие страниц <a href = "https://bi.zone/about/career/">Карьера</a>/<a href = "https://bi.zone/expertise/research/">Материалы</a>
+ :clipboard:Открытие страниц 
+ <a href = "https://astondevs.ru/industries/ecommerce">eCommerce</a>/<a href = "https://astondevs.ru/services/mobile-development">Разработка мобильных приложений</a>
 </br>
 
-🔎 Соответствие результатов выдачи во вкладке<a href = "https://bi.zone/catalog/">продукты
+🔎 Открытие страницы React и проверка ее
+ <a href = "https://astondevs.ru/find-developers/react-js">содержимого
 </br>
  
- :card_index_dividers: Чтение и проверка содержимого PDF файла <a href = "https://bi.zone/upload/for_download/bi_zone_the_fundamentals_of_business_continuity_management_ru.pdf">"Путь к цифровому лидерству. Основы управления непрерывностью бизнеса".<a/>
+ :card_index_dividers: Проверка ответа бота на запрос
  </br>
  
  <a name="Project"><h2>Проект</h2></a>
