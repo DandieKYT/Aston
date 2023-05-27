@@ -12,6 +12,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.sessionId;
 import static com.codeborne.selenide.Selenide.switchTo;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
@@ -92,5 +94,57 @@ public class AstonSteps {
         astonPage.checkVacationQA().shouldBe(Condition.visible);
         Selenide.closeWindow();
         switchTo().window(0);
+    }
+    @Step("Открытие верхнего меню")
+    public void searchByParam(String param) {
+        astonPage.searchByParam(param).hover();
+    }
+    @Step("Открытие вкладки")
+    public void openTitle(String expectedText) {
+        astonPage.openTitle(expectedText).click();
+    }
+    @Step("Проверка страницы по ожидаемому тексту")
+    public void checkTitle(String expectedText){
+        astonPage.checkTitle().shouldBe(text(expectedText));
+    }
+    @Step("Открытие раздела Технологии")
+    public void openTechnologies(){
+        astonPage.openTechnologies().hover();
+    }
+    @Step("Открытие страницы React")
+    public void openReact(){
+        astonPage.openReact().click();
+    }
+    @Step("Проверка страницы React")
+    public void checkReact(){
+        astonPage.checkReact().shouldBe(text("React-разработка"));
+    }
+    @Step("Открытие чата")
+    public void chatWindow(){
+        astonPage.chatWindow().click();
+    }
+    @Step("Отправка сообщения autotest")
+    public void setValueChat(){
+        astonPage.setValueChat().setValue("autotest").pressEnter();
+    }
+    @Step("Проверка ответа чата на сообщение")
+    public void checkChatResponse(){
+        astonPage.checkChatResponse().shouldBe(text("Укажите ваши контакты, чтобы мы смогли ответить вам"));
+    }
+    @Step("Нажатие на кнопку Узнать стоимость")
+    public void buttonPrice(){
+        astonPage.buttonPrice().click();
+    }
+    @Step("Проставление отметки в чек-бокс Desktop")
+    public void checkBoxDesktop(){
+        astonPage.checkBoxDesktop().click();
+    }
+    @Step("Нажатие на кнопку Узнать стоимость внизу страницы")
+    public void lowerButtonPrice(){
+        astonPage.lowerButtonPrice().click();
+    }
+    @Step("Проверка наличия параметра Desktop")
+    public void checkDesktopParam(){
+        astonPage.checkDesktopParam().shouldBe(visible);
     }
 }

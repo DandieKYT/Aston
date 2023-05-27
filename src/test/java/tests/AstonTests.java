@@ -47,30 +47,30 @@ public class AstonTests extends TestBase {
     @ParameterizedTest
     public void servicesAndIndustries(String param, String expectedText) {
         astonSteps.openPage();
-        $x(String.format("//div[text()='%s']", param)).hover();
-        $(byTagAndText("a", (expectedText))).click();
-        $(".TitleWith-module--title--bojgT").shouldBe(text(expectedText));
+        astonSteps.searchByParam(param);
+        astonSteps.openTitle(expectedText);
+        astonSteps.checkTitle(expectedText);
     }
         @Test
         public void reactJs(){
-            astonSteps.openPage();
-            $x("//div[text()='Технологии']").hover();
-            $(byTagAndText("a", "React")).click();
-            $x("//h1[contains(text(),'React-разработка')]").shouldBe(text("React-разработка"));
-        }
+        astonSteps.openPage();
+        astonSteps.openTechnologies();
+        astonSteps.openReact();
+        astonSteps.checkReact();
+    }
         @Test
        public void contactWithUs(){
-            astonSteps.openPage();
-            $x("//jdiv[@class='hoverl_e34b']").click();
-            $x(" //textarea[@placeholder='Введите сообщение']").setValue("autotest").pressEnter();
-            $(".text_dd60").shouldBe(text("Укажите ваши контакты, чтобы мы смогли ответить вам"));
-        }
+        astonSteps.openPage();
+        astonSteps.chatWindow();
+        astonSteps.setValueChat();
+        astonSteps.checkChatResponse();
+    }
         @Test
         public void projectPrice(){
-            astonSteps.openPage();
-            $x("//a[text()='Узнать стоимость']").click();
-            $(byTagAndText("div", "Desktop")).click();
-            $x("//button[@class='Button-module--button--CU-kq Button-module--sizeSM--eCtqi PreviewModal-module--button--JmKgy']").click();
-            $(byTagAndText("div", "Desktop")).shouldBe(visible);
-        }
+        astonSteps.openPage();
+        astonSteps.buttonPrice();
+        astonSteps.checkBoxDesktop();
+        astonSteps.lowerButtonPrice();
+        astonSteps.checkDesktopParam();
+    }
 }
