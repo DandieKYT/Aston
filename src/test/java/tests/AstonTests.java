@@ -26,8 +26,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class AstonTests extends TestBase {
     AstonSteps astonSteps = new AstonSteps();
     @Owner("Kudryavtsev")
-    @Feature("Отрасли и Услуги")
-    @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
+    @Feature("Карьера в Aston")
+    @Story("Открытие страницы на HH и проверка наличия вакансии Тестировщик")
     @Test
     public void careerAston() {
         astonSteps.openPage();
@@ -55,8 +55,8 @@ public class AstonTests extends TestBase {
         astonSteps.checkTitle(expectedText);
     }
     @Owner("Kudryavtsev")
-    @Feature("Отрасли и Услуги")
-    @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
+    @Feature("Технология React")
+    @Story("Открытие страницы React и проверка ее содержимого")
     @Test
     public void reactJs(){
         astonSteps.openPage();
@@ -65,8 +65,8 @@ public class AstonTests extends TestBase {
         astonSteps.checkReact();
     }
     @Owner("Kudryavtsev")
-    @Feature("Отрасли и Услуги")
-    @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
+    @Feature("Чат")
+    @Story("Проверка ответа бота на запрос")
     @Test
     public void contactWithUs(){
         astonSteps.openPage();
@@ -75,8 +75,8 @@ public class AstonTests extends TestBase {
         astonSteps.checkChatResponse();
     }
     @Owner("Kudryavtsev")
-    @Feature("Отрасли и Услуги")
-    @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
+    @Feature("Открытие страницы Узнать стоимость")
+    @Story("Открытие страницы с конфигурацией для проекта и проверка ее соответствия")
     @Test
     public void projectPrice(){
         astonSteps.openPage();
