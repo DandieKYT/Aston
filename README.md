@@ -89,7 +89,7 @@ clean test
 
 ![Screenshot_7](https://github.com/DandieKYT/Aston/assets/75677738/73599f5a-fb93-4207-9775-17ca0c7d4829)
     
-    <a name="Integration_Allure_TestOps"><h2>:bar_chart: Интеграция с Allure TestOps</h2></a>
+<a name="Integration_Allure_TestOps"><h2>:bar_chart: Интеграция с Allure TestOps</h2></a>
     
    
  <a name="ManualTest"><h3>Страница с тестами в TestOps</h3></a>
