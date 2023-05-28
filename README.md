@@ -88,6 +88,14 @@ clean test
 -  <a name="Allure_report2"><h3>Страница с проведенными тестами</h3></a>
 
 ![Screenshot_7](https://github.com/DandieKYT/Aston/assets/75677738/73599f5a-fb93-4207-9775-17ca0c7d4829)
+    
+    <a name="Integration_Allure_TestOps"><h2>:bar_chart: Интеграция с Allure TestOps</h2></a>
+    
+   
+ <a name="ManualTest"><h3>Страница с тестами в TestOps</h3></a>
+    
+    
+![Screenshot_3](https://github.com/DandieKYT/BI.Zone/assets/75677738/b8f9f088-4c8c-4b40-87f5-e15e72e4d42d)
 
 
 <a name="Telegram"><h2>:iphone: Отчет в Telegram</h2></a>
