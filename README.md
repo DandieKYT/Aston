@@ -53,8 +53,8 @@
  <a href = "https://astondevs.ru/industries/ecommerce">eCommerce</a>/<a href = "https://astondevs.ru/services/mobile-development">Разработка мобильных приложений</a>
 </br>
 
-🔎 Открытие страницы React и проверка ее
- <a href = "https://astondevs.ru/find-developers/react-js">содержимого
+🔎 Открытие <a href = "https://astondevs.ru/find-developers/react-js">страницы React</a> и проверка ее
+ содержимого
 </br>
  
  :card_index_dividers: Проверка ответа бота на запрос
