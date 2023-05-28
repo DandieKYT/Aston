@@ -46,7 +46,7 @@ public class AstonTests extends TestBase {
             "Услуги,             Разработка мобильных приложений",
     })
     @Owner("Кудрявцев")
-    @Feature("Отрасли и Услуги")
+    @Feature("Отрасли/Услуги")
     @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
     @ParameterizedTest
     public void servicesAndIndustries(String param, String expectedText) {
