@@ -61,7 +61,7 @@
  </br>
  
  <a name="Project"><h2>Проект</h2></a>
- <a href="https://astondevs.ru/"![Screenshot_8](https://github.com/DandieKYT/Aston/assets/75677738/42f9db0d-affb-4bbd-8498-aafa116dc571)></a> Проект по автоматизации тестирования для <a target="_blank" href="https://astondevs.ru/">ASTON</a> — компания  разработки программного обеспечения.
+ <a href="https://astondevs.ru/">![Screenshot_8](https://github.com/DandieKYT/Aston/assets/75677738/42f9db0d-affb-4bbd-8498-aafa116dc571)</a> Проект по автоматизации тестирования для <a target="_blank" href="https://astondevs.ru/">ASTON</a> — компания  разработки программного обеспечения.
  :star2:
  
  <a name="Build_in_Jenkins" href="https://jenkins.autotests.cloud/job/Aston/"><h2>👷‍♂️ Сборки в [Jenkins](https://jenkins.autotests.cloud/job/Aston/)<h2></a>
