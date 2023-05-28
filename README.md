@@ -66,7 +66,8 @@
  
  <a name="Build_in_Jenkins" href="https://jenkins.autotests.cloud/job/Aston/"><h2>👷‍♂️ Сборки в [Jenkins](https://jenkins.autotests.cloud/job/Aston/)<h2></a>
 
-![This is an image](design/pictures/jenkins.png)
+![Screenshot_5](https://github.com/DandieKYT/Aston/assets/75677738/3d19fa03-801c-494d-a3c7-8ddc63e6d90b)
+
 
 <a name="terminal"><h2>:computer: Запуск из терминала</h2></a>
 Удаленный запуск:
@@ -76,27 +77,29 @@
 clean test
 
 ```
-<a name="Allure_report"><h2>:chart_with_downwards_trend: Allure </a><a href="https://jenkins.autotests.cloud/job/BIZONE/5/allure/">отчет</a></h2>
+<a name="Allure_report"><h2>:chart_with_downwards_trend: Allure </a><a href="https://jenkins.autotests.cloud/job/Aston/4/allure/">отчет</a></h2>
 
 - <a name="Allure_report1"><h3>Главный экран отчета</h3></a>
 
-![This is an image](design/pictures/allure1.png)
+![Screenshot_6](https://github.com/DandieKYT/Aston/assets/75677738/0ceaf8e6-57f9-4a83-aa7c-c3b61411f9ff)
 
 -  <a name="Allure_report2"><h3>Страница с проведенными тестами</h3></a>
 
-![This is an image](design/pictures/allure2.png)
+![Screenshot_7](https://github.com/DandieKYT/Aston/assets/75677738/73599f5a-fb93-4207-9775-17ca0c7d4829)
+
 
 <a name="Telegram"><h2>:iphone: Отчет в Telegram</h2></a>
 
-![This is an image](design/pictures/telegram.jpg)
+![telegramAston](https://github.com/DandieKYT/Aston/assets/75677738/657098c2-159f-481f-9b2c-0542cabeb0e6)
+
 
 <a name="Video"><h2>:movie_camera: Видео примеры прохождения тестов</h2></a>
 
 - <a name="Video1"><h3>Пример запуска тестов через selenoid</h3></a>
-    <h1><a href="https://selenoid.autotests.cloud/video/e3e723968a6e10d3b7d8bb4f5b7eb525.mp4">Открытие страниц Карьера/Материалы<br>
+    <h1><a href="https://selenoid.autotests.cloud/video/386114848c2441fe08af0be82d733469.mp4">Test suite Aston<br>
   
 
-https://github.com/DandieKYT/BI.Zone/assets/75677738/fcf4b250-3c9a-4302-a56e-05006cf3e2f4
+https://github.com/DandieKYT/Aston/assets/75677738/870bc638-c961-4143-abae-20f2c0e25feb
 
 
 
