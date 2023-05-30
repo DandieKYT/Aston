@@ -11,7 +11,7 @@ public class AstonPage {
     private SelenideElement checkTitle = $(".TitleWith-module--title--bojgT");
     private SelenideElement closeCookie = $x("//button[contains(text(),'Подтверждаю')]");
     private SelenideElement careerAston = $(withTagAndText("div", "Карьера"));
-    private SelenideElement secondCareerAston =  $(withTagAndText("a", "Карьера"));
+    private SelenideElement secondCareerAston =  $x("//a[@class='SubMenu-module--item--lERDx SubMenu-module--link--a13yV'][contains(text(),'Карьера')]");
     private SelenideElement vacations = $x("//a[contains(text(),'Вакансии')]");
     private SelenideElement buttonVacations = $(".tmpl_hh_tab--about .tmpl_hh_header__vacancy-button");
     private SelenideElement checkVacationQA = $x("//span[text()='Тестировщик']");
