@@ -19,7 +19,7 @@ public class AstonPage {
     private SelenideElement openReact = $(byTagAndText("a","React"));
 
     private SelenideElement checkReact = $x("//h1[contains(text(),'React-разработка')]");
-    private SelenideElement chatWindow = $x("//jdiv[@class='hoverl_e34b']");
+    private SelenideElement chatWindow = $x("//jdiv[@class='hoverl_a548']");
     private SelenideElement setValueChat = $x(" //textarea[@placeholder='Введите сообщение']");
     private SelenideElement checkChatResponse = $(".text_dd60");
     private SelenideElement buttonPrice = $x("//a[text()='Узнать стоимость']");
