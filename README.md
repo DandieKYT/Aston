@@ -10,6 +10,8 @@
 + [:chart_with_downwards_trend: Allure отчет](#Allure_report)
     + [Главный экран отчета](#Allure_report1)
     + [Страница с проведенными тестами](#Allure_report2)
++ [:bar_chart: Интеграция с Allure TestOps](#Integration_Allure_TestOps)
+    + [Страница с тестами в TestOps](#ManualTest)
 + [:iphone: Отчет в Telegram](#Telegram)
 + [:movie_camera: Видео примеры прохождения тестов](#Video)
 
@@ -86,6 +88,15 @@ clean test
 -  <a name="Allure_report2"><h3>Страница с проведенными тестами</h3></a>
 
 ![Screenshot_7](https://github.com/DandieKYT/Aston/assets/75677738/73599f5a-fb93-4207-9775-17ca0c7d4829)
+    
+<a name="Integration_Allure_TestOps"><h2>:bar_chart: Интеграция с Allure TestOps</h2></a>
+    
+   
+ <a name="ManualTest"><h3>Страница с тестами в TestOps</h3></a>
+    
+    
+![Screenshot_5](https://github.com/DandieKYT/Aston/assets/75677738/cbed0f18-504f-442a-b302-4be347e19d37)
+
 
 
 <a name="Telegram"><h2>:iphone: Отчет в Telegram</h2></a>
