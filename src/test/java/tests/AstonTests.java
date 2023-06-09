@@ -27,7 +27,7 @@ public class AstonTests extends TestBase {
     AstonSteps astonSteps = new AstonSteps();
     @Owner("Кудрявцев")
     @Feature("Карьера в Aston")
-    @Story("Открытие страницы на HH и проверка наличия вакансии Тестировщик")
+    @Story("Проверка наличия вакансии Тестировщик")
     @Test
     public void careerAston() {
         astonSteps.openPage();
