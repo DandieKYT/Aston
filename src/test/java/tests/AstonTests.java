@@ -35,9 +35,7 @@ public class AstonTests extends TestBase {
         astonSteps.secondCareerAston();
         astonSteps.closeCookie();
         astonSteps.vacations();
-        astonSteps.buttonVacations();
         astonSteps.checkVacationQA();
-
     }
 
 

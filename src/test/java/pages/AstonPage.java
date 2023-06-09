@@ -9,9 +9,9 @@ import static com.codeborne.selenide.Selenide.*;
 public class AstonPage {
     private SelenideElement checkTitle = $(".TitleWith-module--title--bojgT");
     private SelenideElement closeCookie = $x("//button[contains(text(),'Подтверждаю')]");
-    private SelenideElement careerAston = $(withTagAndText("div", "Карьера"));
-    private SelenideElement secondCareerAston =  $(withTagAndText("a", "Карьера"));
-    private SelenideElement vacations = $x("//a[contains(text(),'Вакансии')]");
+    private SelenideElement careerAston =  $(".MainNav-module--list--X5WUN > li:nth-of-type(6) > div > div");
+    private SelenideElement secondCareerAston =  $(withTagAndText("a", "Почему Aston"));
+    private SelenideElement vacations = $(".TitleWith-module--button--FTFLX");
     private SelenideElement buttonVacations = $(".tmpl_hh_tab--about .tmpl_hh_header__vacancy-button");
     private SelenideElement checkVacationQA = $x("//span[text()='Тестировщик']");
     private SelenideElement openTechnologies = $x("//div[text()='Технологии']");

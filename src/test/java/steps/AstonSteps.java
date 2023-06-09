@@ -14,8 +14,8 @@ import java.nio.charset.StandardCharsets;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.sessionId;
-import static com.codeborne.selenide.Selenide.switchTo;
+import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
@@ -91,7 +91,8 @@ public class AstonSteps {
     }
     @Step("Проверка наличия вакансии Тестировщик")
     public void checkVacationQA(){
-        astonPage.checkVacationQA().shouldBe(Condition.visible);
+        $(".Filters_wrapper__xmdf6 > div:nth-of-type(3) > div > div > input").setValue("QA");
+        $(".Filters_wrapper__xmdf6 > div:nth-of-type(3) > div > ul > li > button > span").shouldBe(visible);
         Selenide.closeWindow();
         switchTo().window(0);
     }
