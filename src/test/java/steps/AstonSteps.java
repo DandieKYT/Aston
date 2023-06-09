@@ -130,7 +130,7 @@ public class AstonSteps {
     }
     @Step("Проверка ответа чата на сообщение")
     public void checkChatResponse(){
-        astonPage.checkChatResponse().shouldBe(text("Укажите ваши контакты, чтобы мы смогли ответить вам"));
+        astonPage.checkChatResponse().shouldBe(text("Представьтесь в чате"));
     }
     @Step("Нажатие на кнопку Узнать стоимость")
     public void buttonPrice(){
