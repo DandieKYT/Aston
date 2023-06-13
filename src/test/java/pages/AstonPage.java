@@ -20,8 +20,7 @@ public class AstonPage {
     private SelenideElement checkReact = $x("//h1[contains(text(),'React-разработка')]");
     private SelenideElement chatWindow = $(".hoverl_b094");
     private SelenideElement setValueChat = $x(" //textarea[@placeholder='Введите сообщение']");
-    private SelenideElement checkChatResponse = $x("\n" +
-            "//*[@title='13.06.23 12:19:38']//jdiv[contains(text(), 'Добрый день! Чем я могу Вам помочь?')]");
+    private SelenideElement checkChatResponse = $x("//jdiv[@class='text_b080 __bot_fba3']");
     private SelenideElement buttonPrice = $x("//a[text()='Узнать стоимость']");
     private SelenideElement checkBoxDesktop = $(byTagAndText("div", "Desktop"));
     private SelenideElement lowerButtonPrice = $x("//button[@class='Button-module--button--CU-kq Button-module--sizeSM--eCtqi PreviewModal-module--button--JmKgy']");
