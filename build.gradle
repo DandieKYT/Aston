@@ -75,5 +75,7 @@ tasks.withType(Test) {//благодаря этой строчке переда�
 }
 test {
     useJUnitPlatform()
+
+
 }
 
