@@ -7,7 +7,7 @@
 + [🎯Проект](#Project)
 + [👷‍♂️ Сборка в Jenkins](#Build_in_Jenkins)
 + [🖥 Запуск из терминала](#terminal)
-+ [:chart_with_downwards_trend: Allure отчет](#Allure_report)
++ [:chart_with_downwards_trend: Allure отчет](#12)
     + [Главный экран отчета](#Allure_report1)
     + [Страница с проведенными тестами](#Allure_report2)
 + [:bar_chart: Интеграция с Allure TestOps](#Integration_Allure_TestOps)
@@ -79,7 +79,7 @@
 clean test
 
 ```
-<a name="Allure_reportt"><h2>:chart_with_downwards_trend: Allure  </a><a href="https://jenkins.autotests.cloud/job/Students/job/Aston/4/allure/">отчет</a></h2>
+<a name="12"><h2>:chart_with_downwards_trend: Allure  </a><a href="https://jenkins.autotests.cloud/job/Students/job/Aston/4/allure/">отчет</a></h2>
 
 - <a name="Allure_report1"><h3>Главный экран отчета</h3></a>
 
