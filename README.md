@@ -66,7 +66,7 @@
  <code><a href="https://astondevs.ru/">![This is an image](/design/icons/Screenshot_8.png)</a></code>Проект по автоматизации тестирования для <a target="_blank" href="https://astondevs.ru/">ASTON</a> — компания  разработки программного обеспечения.
  :star2:
  
- <a name="Build_in_Jenkins" href="https://jenkins.autotests.cloud/job/Aston/"><h2>👷‍♂️ Сборки в [Jenkins](https://jenkins.autotests.cloud/job/Aston/)<h2></a>
+ <a name="Build_in_Jenkins" href="https://jenkins.autotests.cloud/job/Students/job/Aston/"><h2>👷‍♂️ Сборки в [Jenkins](https://jenkins.autotests.cloud/job/Students/job/Aston/)<h2></a>
 
 ![Screenshot_5](https://github.com/DandieKYT/Aston/assets/75677738/3d19fa03-801c-494d-a3c7-8ddc63e6d90b)
 
