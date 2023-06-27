@@ -10,14 +10,6 @@ import pages.*;
 
 @Tag("remote_test")
 public class AstonTests extends TestBase {
-    ReactPage reactPage = new ReactPage();
-    CareerPage careerPage = new CareerPage();
-    MainPage mainPage = new MainPage();
-    VacationPage vacationPage = new VacationPage();
-    ProjectPricePage projectPricePage = new ProjectPricePage();
-    ParamPage paramPage = new ParamPage();
-
-
 
     @Owner("Кудрявцев")
     @Feature("Карьера в Aston")

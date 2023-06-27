@@ -10,6 +10,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import pages.*;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -22,6 +24,12 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class TestBase {
+    ReactPage reactPage = new ReactPage();
+    CareerPage careerPage = new CareerPage();
+    MainPage mainPage = new MainPage();
+    VacationPage vacationPage = new VacationPage();
+    ProjectPricePage projectPricePage = new ProjectPricePage();
+    ParamPage paramPage = new ParamPage();
 
     Attachments attachment = new Attachments();
 
