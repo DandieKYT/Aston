@@ -16,7 +16,7 @@ public class TestBase extends help.Attachment {
     MainPage mainPage = new MainPage();
     VacationPage vacationPage = new VacationPage();
     ProjectPricePage projectPricePage = new ProjectPricePage();
-    ParamPage paramPage = new ParamPage();
+    ServicesAndIndustriesPage servicesAndIndustriesPage = new ServicesAndIndustriesPage();
     Attachment attachment = new Attachment();
     @BeforeAll
     static void setUp() {

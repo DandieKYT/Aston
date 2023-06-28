@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import pages.ChatPage;
 
 @Tag("remote_test")
 public class AstonTestsSuite extends TestBase {
@@ -36,9 +35,9 @@ public class AstonTestsSuite extends TestBase {
     @ParameterizedTest
     public void servicesAndIndustries(String param, String expectedText) {
         mainPage.openPage();
-        paramPage.searchByParam(param);
-        paramPage.openTitle(expectedText);
-        paramPage.checkTitle(expectedText);
+        servicesAndIndustriesPage.searchByParam(param);
+        servicesAndIndustriesPage.openTitle(expectedText);
+        servicesAndIndustriesPage.checkTitle(expectedText);
     }
     @Owner("Кудрявцев")
     @Feature("Технология React")
