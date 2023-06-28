@@ -12,6 +12,7 @@ import static io.qameta.allure.Allure.step;
 public class ProjectPricePage {
     private SelenideElement
             checkBoxDesktop = $(byTagAndText("div", "Desktop")),
+            buttonPrice = $x("//a[text()='Узнать стоимость']"),
             lowerButtonPrice = $x("//button[@class='Button-module--button--CU-kq Button-module--sizeSM--eCtqi PreviewModal-module--button--JmKgy']"),
             checkDesktopParam = $(byTagAndText("div", "Desktop"));
 
@@ -34,5 +35,10 @@ public class ProjectPricePage {
         });
         return this;
     }
-
+    public ProjectPricePage buttonPrice() {
+        step("Нажатие на кнопку Узнать стоимость", () -> {
+            buttonPrice.click();
+        });
+        return this;
+    }
 }

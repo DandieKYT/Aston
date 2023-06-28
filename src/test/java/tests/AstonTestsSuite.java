@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import pages.*;
+import pages.ChatPage;
 
 @Tag("remote_test")
-public class AstonTests extends TestBase {
+public class AstonTestsSuite extends TestBase {
 
     @Owner("Кудрявцев")
     @Feature("Карьера в Aston")
@@ -56,9 +56,9 @@ public class AstonTests extends TestBase {
     @Test
     public void contactWithUs(){
         mainPage.openPage();
-        mainPage.chatWindow();
-        mainPage.setValueChat();
-        mainPage.checkChatResponse();
+        chatPage.chatWindow();
+        chatPage.setValueChat();
+        chatPage.checkChatResponse();
     }
     @Owner("Кудрявцев")
     @Feature("Открытие страницы Узнать стоимость")
@@ -66,7 +66,7 @@ public class AstonTests extends TestBase {
     @Test
     public void projectPrice(){
         mainPage.openPage();
-        mainPage.buttonPrice();
+        projectPricePage.buttonPrice();
         projectPricePage.checkBoxDesktop();
         projectPricePage.lowerButtonPrice();
         projectPricePage.checkDesktopParam();

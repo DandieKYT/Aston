@@ -22,7 +22,6 @@ public class Attachment {
         $(withText("#" + number)).should(Condition.visible);
         attachScreenshot();
     }
-
     @Step("Page Source")
     @io.qameta.allure.Attachment(value = "Page Source", type = "text/plain")
     public static byte[] pageSource() {
@@ -64,5 +63,4 @@ public class Attachment {
         }
         return null;
     }
-
 }

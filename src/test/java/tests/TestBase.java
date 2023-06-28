@@ -10,13 +10,13 @@ import pages.*;
 import java.util.Map;
 
 public class TestBase extends help.Attachment {
+    ChatPage chatPage = new ChatPage();
     ReactPage reactPage = new ReactPage();
     CareerPage careerPage = new CareerPage();
     MainPage mainPage = new MainPage();
     VacationPage vacationPage = new VacationPage();
     ProjectPricePage projectPricePage = new ProjectPricePage();
     ParamPage paramPage = new ParamPage();
-
     Attachment attachment = new Attachment();
     @BeforeAll
     static void setUp() {
@@ -31,9 +31,7 @@ public class TestBase extends help.Attachment {
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
                 "enableVideo", true
-
         ));
-
         Configuration.browserCapabilities = capabilities;
     }
 
