@@ -17,8 +17,8 @@ public class AstonTests extends TestBase {
     @Test
     public void careerAston() {
         mainPage.openPage();
-        mainPage.careerAston();
-        mainPage.secondCareerAston();
+        careerPage.careerAston();
+        careerPage.secondCareerAston();
         mainPage.closeCookie();
         careerPage.vacations();
         vacationPage.qaValue();
@@ -46,8 +46,8 @@ public class AstonTests extends TestBase {
     @Test
     public void reactJs(){
         mainPage.openPage();
-        mainPage.openTechnologies();
-        mainPage.openReact();
+        reactPage.openTechnologies();
+        reactPage.openReact();
         reactPage.checkReact();
     }
     @Owner("Кудрявцев")
