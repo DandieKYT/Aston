@@ -15,10 +15,10 @@ public class AstonTestsSuite extends TestBase {
     @Story("Проверка наличия вакансии Тестировщик")
     @Test
     public void careerAston() {
-        mainPage.openPage();
+        startTest.openPage();
         careerPage.careerAston();
         careerPage.secondCareerAston();
-        mainPage.closeCookie();
+        startTest.closeCookie();
         careerPage.vacations();
         vacationPage.qaValue();
         vacationPage.checkQaResult();
@@ -34,7 +34,7 @@ public class AstonTestsSuite extends TestBase {
     @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
     @ParameterizedTest
     public void servicesAndIndustries(String param, String expectedText) {
-        mainPage.openPage();
+        startTest.openPage();
         servicesAndIndustriesPage.searchByParam(param);
         servicesAndIndustriesPage.openTitle(expectedText);
         servicesAndIndustriesPage.checkTitle(expectedText);
@@ -44,7 +44,7 @@ public class AstonTestsSuite extends TestBase {
     @Story("Открытие страницы React и проверка ее содержимого")
     @Test
     public void reactJs(){
-        mainPage.openPage();
+        startTest.openPage();
         reactPage.openTechnologies();
         reactPage.openReact();
         reactPage.checkReact();
@@ -54,7 +54,7 @@ public class AstonTestsSuite extends TestBase {
     @Story("Проверка ответа бота на запрос")
     @Test
     public void contactWithUs(){
-        mainPage.openPage();
+        startTest.openPage();
         chatPage.chatWindow();
         chatPage.setValueChat();
         chatPage.checkChatResponse();
@@ -64,7 +64,7 @@ public class AstonTestsSuite extends TestBase {
     @Story("Открытие страницы с конфигурацией для проекта и проверка ее соответствия")
     @Test
     public void projectPrice(){
-        mainPage.openPage();
+        startTest.openPage();
         projectPricePage.buttonPrice();
         projectPricePage.checkBoxDesktop();
         projectPricePage.lowerButtonPrice();

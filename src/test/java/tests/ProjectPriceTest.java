@@ -11,7 +11,7 @@ public class ProjectPriceTest extends TestBase {
     @Story("Открытие страницы с конфигурацией для проекта и проверка ее соответствия")
     @Test
     public void projectPrice(){
-        mainPage.openPage();
+        startTest.openPage();
         projectPricePage.buttonPrice();
         projectPricePage.checkBoxDesktop();
         projectPricePage.lowerButtonPrice();

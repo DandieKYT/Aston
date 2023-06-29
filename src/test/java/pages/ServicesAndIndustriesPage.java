@@ -1,18 +1,22 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
+import help.StartTest;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selectors.byTagAndText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 import static io.qameta.allure.Allure.step;
 
 public class ServicesAndIndustriesPage {
-MainPage mainPage = new MainPage();
+
+ParametrsLoacators locator = new ParametrsLoacators();
 
 private SelenideElement checkTitle = $(".TitleWith-module--title--bojgT");
     public ServicesAndIndustriesPage openTitle(String expectedText) {
         step("Открытие вкладки", () -> {
-            mainPage.openTitle(expectedText).click();
+            locator.openTitle(expectedText).click();
         });
         return this;
     }
@@ -22,10 +26,19 @@ private SelenideElement checkTitle = $(".TitleWith-module--title--bojgT");
         });
         return this;
     }
-    public MainPage searchByParam(String param) {
+    public StartTest searchByParam(String param) {
         step("Открытие верхнего меню", () -> {
-            mainPage.searchByParam(param).hover();
+            locator.searchByParam(param).hover();
         });
         return null;
+    }
+    public class ParametrsLoacators{
+        public SelenideElement openTitle(String expectedText) {
+            return $(byTagAndText("a", (expectedText)));
+        }
+
+        public SelenideElement searchByParam(String param) {
+            return $x(String.format("//div[text()='%s']", param));
+        }
     }
 }

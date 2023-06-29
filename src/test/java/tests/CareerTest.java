@@ -11,10 +11,10 @@ public class CareerTest  extends TestBase{
     @Story("Проверка наличия вакансии Тестировщик")
     @Test
     public void careerAston() {
-        mainPage.openPage();
+        startTest.openPage();
         careerPage.careerAston();
         careerPage.secondCareerAston();
-        mainPage.closeCookie();
+        startTest.closeCookie();
         careerPage.vacations();
         vacationPage.qaValue();
         vacationPage.checkQaResult();

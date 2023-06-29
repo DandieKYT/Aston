@@ -11,7 +11,7 @@ public class ReactTest extends TestBase {
     @Story("Открытие страницы React и проверка ее содержимого")
     @Test
     public void reactJs(){
-        mainPage.openPage();
+        startTest.openPage();
         reactPage.openTechnologies();
         reactPage.openReact();
         reactPage.checkReact();

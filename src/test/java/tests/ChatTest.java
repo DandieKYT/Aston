@@ -11,7 +11,7 @@ public class ChatTest extends TestBase {
     @Story("Проверка ответа бота на запрос")
     @Test
     public void contactWithUs(){
-        mainPage.openPage();
+        startTest.openPage();
         chatPage.chatWindow();
         chatPage.setValueChat();
         chatPage.checkChatResponse();

@@ -16,7 +16,7 @@ public class ServicesAndIndustriesTest extends TestBase{
     @Story("Открытие страниц  eCommerce и Разработка мобильных приложений")
     @ParameterizedTest
     public void servicesAndIndustries(String param, String expectedText) {
-        mainPage.openPage();
+        startTest.openPage();
         servicesAndIndustriesPage.searchByParam(param);
         servicesAndIndustriesPage.openTitle(expectedText);
         servicesAndIndustriesPage.checkTitle(expectedText);

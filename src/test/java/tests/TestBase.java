@@ -3,6 +3,7 @@ package tests;
 
 import com.codeborne.selenide.Configuration;
 import help.Attachment;
+import help.StartTest;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -13,7 +14,7 @@ public class TestBase extends help.Attachment {
     ChatPage chatPage = new ChatPage();
     ReactPage reactPage = new ReactPage();
     CareerPage careerPage = new CareerPage();
-    MainPage mainPage = new MainPage();
+    StartTest startTest = new StartTest();
     VacationPage vacationPage = new VacationPage();
     ProjectPricePage projectPricePage = new ProjectPricePage();
     ServicesAndIndustriesPage servicesAndIndustriesPage = new ServicesAndIndustriesPage();
