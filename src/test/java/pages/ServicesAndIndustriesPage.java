@@ -1,7 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import help.StartTest;
+import tests.TestBase;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byTagAndText;
@@ -26,7 +26,7 @@ private SelenideElement checkTitle = $(".TitleWith-module--title--bojgT");
         });
         return this;
     }
-    public StartTest searchByParam(String param) {
+    public TestBase.StartTest searchByParam(String param) {
         step("Открытие верхнего меню", () -> {
             locator.searchByParam(param).hover();
         });

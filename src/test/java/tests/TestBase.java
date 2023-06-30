@@ -2,13 +2,17 @@ package tests;
 
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import help.Attachment;
-import help.StartTest;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pages.*;
 import java.util.Map;
+
+import static com.codeborne.selenide.Selenide.$x;
+import static io.qameta.allure.Allure.step;
 
 public class TestBase extends help.Attachment {
     ChatPage chatPage = new ChatPage();
@@ -42,6 +46,27 @@ public class TestBase extends help.Attachment {
         attachment.attachScreenshot();
         attachment.pageSource();
         attachment.addVideo();
+    }
+
+    public static class StartTest {
+        private SelenideElement
+
+                closeCookie = $x("//button[contains(text(),'Подтверждаю')]");
+
+
+        public StartTest closeCookie() {
+            step("Закрытие куки", () -> {
+                closeCookie.click();
+            });
+            return this;
+        }
+
+        public StartTest openPage() {
+            step("Открытие главной страницы", () -> {
+                Selenide.open("/");
+            });
+            return this;
+        }
     }
 }
 
