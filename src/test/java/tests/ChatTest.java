@@ -12,6 +12,7 @@ public class ChatTest extends TestBase {
     @Test
     public void contactWithUs(){
         startTest.openPage();
+        startTest.closeCookie();
         chatPage.chatWindow();
         chatPage.setValueChat();
         chatPage.checkChatResponse();

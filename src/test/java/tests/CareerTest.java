@@ -12,6 +12,7 @@ public class CareerTest  extends TestBase{
     @Test
     public void careerAston() {
         startTest.openPage();
+        startTest.closeCookie();
         careerPage.careerAston();
         careerPage.secondCareerAston();
         startTest.closeCookie();

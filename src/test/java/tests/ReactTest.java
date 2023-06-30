@@ -12,6 +12,7 @@ public class ReactTest extends TestBase {
     @Test
     public void reactJs(){
         startTest.openPage();
+        startTest.closeCookie();
         reactPage.openTechnologies();
         reactPage.openReact();
         reactPage.checkReact();

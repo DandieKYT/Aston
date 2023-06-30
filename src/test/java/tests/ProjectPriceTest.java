@@ -12,6 +12,7 @@ public class ProjectPriceTest extends TestBase {
     @Test
     public void projectPrice(){
         startTest.openPage();
+        startTest.closeCookie();
         projectPricePage.buttonPrice();
         projectPricePage.checkBoxDesktop();
         projectPricePage.lowerButtonPrice();

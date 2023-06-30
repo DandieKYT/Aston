@@ -17,6 +17,7 @@ public class ServicesAndIndustriesTest extends TestBase{
     @ParameterizedTest
     public void servicesAndIndustries(String param, String expectedText) {
         startTest.openPage();
+        startTest.closeCookie();
         servicesAndIndustriesPage.searchByParam(param);
         servicesAndIndustriesPage.openTitle(expectedText);
         servicesAndIndustriesPage.checkTitle(expectedText);
