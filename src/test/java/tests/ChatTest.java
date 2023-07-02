@@ -5,6 +5,7 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.Test;
 
+
 public class ChatTest extends TestBase {
     @Owner("Кудрявцев")
     @Feature("Чат")
