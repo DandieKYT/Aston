@@ -20,6 +20,7 @@ public class VacationPage {
         });
         return this;
     }
+
     public VacationPage checkQaResult() {
         step("Проверка наличия вакансий", () -> {
             checkQaResult.shouldBe(visible);

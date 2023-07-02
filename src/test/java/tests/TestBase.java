@@ -9,6 +9,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pages.*;
+
 import java.util.Map;
 
 import static com.codeborne.selenide.Selenide.$x;
@@ -24,6 +25,7 @@ public class TestBase extends help.Attachment {
     ProjectPricePage projectPricePage = new ProjectPricePage();
     ServicesAndIndustriesPage servicesAndIndustriesPage = new ServicesAndIndustriesPage();
     Attachment attachment = new Attachment();
+
     @BeforeAll
     static void setUp() {
         Configuration.browser = "chrome";
@@ -53,7 +55,7 @@ public class TestBase extends help.Attachment {
 
         public StartTest closeCookie() {
             step("Закрытие куки", () -> {
-            closeCookie.click();
+                closeCookie.click();
             });
             return this;
         }

@@ -23,18 +23,21 @@ public class ProjectPricePage {
         });
         return this;
     }
+
     public ProjectPricePage lowerButtonPrice() {
         step("Нажатие на кнопку Узнать стоимость внизу страницы", () -> {
             lowerButtonPrice.click();
         });
         return this;
     }
+
     public ProjectPricePage checkDesktopParam() {
         step("Проверка наличия параметра Desktop", () -> {
             checkDesktopParam.shouldBe(Condition.visible);
         });
         return this;
     }
+
     public ProjectPricePage buttonPrice() {
         step("Нажатие на кнопку Узнать стоимость", () -> {
             buttonPrice.click();
