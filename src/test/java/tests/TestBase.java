@@ -15,6 +15,7 @@ import static com.codeborne.selenide.Selenide.$x;
 import static io.qameta.allure.Allure.step;
 
 public class TestBase extends help.Attachment {
+    BasePage basePage = new BasePage();
     ChatPage chatPage = new ChatPage();
     ReactPage reactPage = new ReactPage();
     CareerPage careerPage = new CareerPage();
@@ -48,15 +49,11 @@ public class TestBase extends help.Attachment {
         attachment.addVideo();
     }
 
-    public static class StartTest {
-        private SelenideElement
-
-                closeCookie = $x("//button[contains(text(),'Подтверждаю')]");
-
+    public static class StartTest extends BasePage {
 
         public StartTest closeCookie() {
             step("Закрытие куки", () -> {
-                closeCookie.click();
+            closeCookie.click();
             });
             return this;
         }
