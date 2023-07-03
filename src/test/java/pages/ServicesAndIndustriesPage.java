@@ -29,7 +29,7 @@ public class ServicesAndIndustriesPage {
         return this;
     }
 
-    public TestBase.StartTest searchByParam(String param) {
+    public TestBase searchByParam(String param) {
         step("Открытие верхнего меню", () -> {
             locator.searchByParam(param).hover();
         });

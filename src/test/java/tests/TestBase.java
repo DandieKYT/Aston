@@ -14,11 +14,10 @@ import java.util.Map;
 import static io.qameta.allure.Allure.step;
 
 public class TestBase extends help.Attachment {
-    BasePage basePage = new BasePage();
     ChatPage chatPage = new ChatPage();
     ReactPage reactPage = new ReactPage();
     CareerPage careerPage = new CareerPage();
-    StartTest startTest = new StartTest();
+    BasePage basePage = new BasePage();
     VacationPage vacationPage = new VacationPage();
     ProjectPricePage projectPricePage = new ProjectPricePage();
     ServicesAndIndustriesPage servicesAndIndustriesPage = new ServicesAndIndustriesPage();
@@ -46,21 +45,5 @@ public class TestBase extends help.Attachment {
         attachment.addVideo();
     }
 
-    public static class StartTest extends BasePage {
-
-        public StartTest closeCookie() {
-            step("Закрытие куки", () -> {
-                closeCookie.click();
-            });
-            return this;
-        }
-
-        public StartTest openPage() {
-            step("Открытие главной страницы", () -> {
-                Selenide.open("/");
-            });
-            return this;
-        }
-    }
 }
 
