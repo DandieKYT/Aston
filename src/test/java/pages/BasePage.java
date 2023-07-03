@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$x;
 import static io.qameta.allure.Allure.step;
 
 public class BasePage {
-    public SelenideElement closeCookie = $x("//button[contains(text(),'Подтверждаю')]");
+    private SelenideElement closeCookie = $x("//button[contains(text(),'Подтверждаю')]");
     public  BasePage closeCookie() {
     step("Закрытие куки", () -> {
         closeCookie.click();
