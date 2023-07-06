@@ -11,7 +11,7 @@ import static io.qameta.allure.Allure.step;
 public class ReactPage {
     private SelenideElement
             openTechnologies = $x("//div[text()='Технологии']"),
-            openReact = $(byTagAndText("a","React")),
+            openReact = $(byTagAndText("a", "React")),
             checkReact = $x("//h1[contains(text(),'React-разработка')]");
 
 
@@ -21,12 +21,14 @@ public class ReactPage {
         });
         return this;
     }
+
     public ReactPage openTechnologies() {
         step("Открытие раздела Технологии", () -> {
             openTechnologies.hover();
         });
         return this;
     }
+
     public ReactPage openReact() {
         step("Открытие страницы React", () -> {
             openReact.click();

@@ -19,12 +19,14 @@ public class ChatPage {
         });
         return this;
     }
+
     public ChatPage setValueChat() {
         step("Отправка сообщения autotest", () -> {
             setValueChat.setValue("autotest").pressEnter();
         });
         return this;
     }
+
     public ChatPage checkChatResponse() {
         step("Проверка ответа чата на сообщение", () -> {
             checkChatResponse.shouldBe(text("Представьтесь в чате"));

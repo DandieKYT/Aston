@@ -11,7 +11,7 @@ import static io.qameta.allure.Allure.step;
 public class CareerPage {
 
     private SelenideElement
-            secondCareerAston =  $(withTagAndText("a", "Почему Aston")),
+            secondCareerAston = $(withTagAndText("a", "Почему Aston")),
             careerAston = $(".MainNav-module--list--X5WUN > li:nth-of-type(6) > div > div"),
             vacations = $(".TitleWith-module--button--FTFLX");
 
@@ -22,6 +22,7 @@ public class CareerPage {
         });
         return this;
     }
+
     public CareerPage secondCareerAston() {
         step("Открытие вкладки Карьера", () -> {
             secondCareerAston.click();

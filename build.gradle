@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'java'
-    id ('io.qameta.allure') version '2.11.2'
+    id('io.qameta.allure') version '2.11.2'
 }
 group 'quru.qa'
 version '1.0-SNAPSHOT'
@@ -33,10 +33,8 @@ repositories {
 }
 
 
-
 dependencies {
-    testImplementation (
-            'org.junit.jupiter:junit-jupiter:5.9.2',
+    testImplementation('org.junit.jupiter:junit-jupiter:5.9.2',
             'com.codeborne:selenide:6.12.3',
             'com.codeborne:pdf-test:1.5.0',
             'com.codeborne:xls-test:1.4.3',
@@ -73,9 +71,34 @@ tasks.withType(Test) {//благодаря этой строчке переда�
     systemProperties(System.getProperties())
     useJUnitPlatform()
 }
-test {
-    useJUnitPlatform()
-
-
+task AstonTests(type: Test) {
+    useJUnitPlatform {
+        includeTags "AstonTests"
+    }
+}
+task CareerTest(type: Test) {
+    useJUnitPlatform {
+        includeTags "CareerTest"
+    }
+}
+task ChatTest(type: Test) {
+    useJUnitPlatform {
+        includeTags "ChatTest"
+    }
+}
+task ProjectPriceTest(type: Test) {
+    useJUnitPlatform {
+        includeTags "ProjectPriceTest"
+    }
+}
+task ReactTest(type: Test) {
+    useJUnitPlatform {
+        includeTags "ReactTest"
+    }
+}
+task ServicesAndIndustriesTest(type: Test) {
+    useJUnitPlatform {
+        includeTags "ServicesAndIndustriesTest"
+    }
 }
 
